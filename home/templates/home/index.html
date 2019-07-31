@@ -1,0 +1,270 @@
+<html>
+     <html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Hangout</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/static/css/fontAwesome.css">
+        <link rel="stylesheet" href="/static/css/hero-slider.css">
+        <link rel="stylesheet" href="/static/css/owl-carousel.css">
+        <link rel="stylesheet" href="/static/css/datepicker.css">
+        <link rel="stylesheet" href="/static/css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="/hackatonproject/home/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+
+<body>
+ 
+    <div class="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="primary-nav-button" type="button">Menu</button>
+                        <a href="index.html"><div class="logo">
+                            <img src="/static/images/logo.png" alt="Hangout">
+                        </div></a>
+                        <nav id="primary-nav" class="dropdown cf">
+                            <ul class="dropdown menu">
+                                <!-- <li class='active'><a href="#">About</a></li>  -->
+                                <li><a class="scrollTo" data-scrollTo="blog" href="#">페스티벌 정보</a></li>
+                                <li><a class="scrollTo" data-scrollTo="services" href="#">친구 구하기</a></li>
+                                <li><a class="scrollTo" data-scrollTo="contact" href="#">페스티벌 일정</a></li>
+                                <li><a class="scrollTo" data-scrollTo="login" href="#">로그인</a></li>
+
+                                <form id="logout" method="POST" action="#">
+                                <input type="hidden" />
+                                </form>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+      
+
+    
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="banner-caption">
+                        <div class="line-dec"></div>
+                        <h2>Hang out</h2>
+                        <span>페스티벌&콘서트 친구 매칭 서비스</span>
+                        <div class="blue-button">
+                            <a class="scrollTo" data-scrollTo="popular" href="#">페스티벌 정보</a>
+                        </div>
+                    </div>
+                    <div class="submit-form">
+                        <form id="form-submit" action="" method="get">
+                            <div class="row">
+                                <div class="col-md-3 first-item">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="페스티벌 이름" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3 second-item">
+                                    <fieldset>
+                                        <input name="location" type="text" class="form-control" id="location" placeholder="지역 이름" required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3 third-item">
+                                    <fieldset>
+                                        <select required name='category' onchange='this.form()'>
+                                            <option value="">카테고리 선택</option>
+                                            <option value="Shops">페스티벌</option>
+                                            <option value="Hotels">지역축제</option>
+                                            <option value="Restaurants">콘서트</option>
+                                    
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">검색하기</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured-places" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <span>가장 인기있는 페스티벌</span>
+                        <h2>음.?</h2>
+                    </div>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="/static/images/featured_item_1.jpg" alt="">
+                            <div class="overlay-content">
+                            </div>
+                            <div class="date-content">
+                                <h6>15일</h6>
+                                <span>8월</span>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>워터밤 대전 2019</h4>
+                            <p>
+                              최고의 썸머 뮤직 페스티벌! 
+                                올 여름 워터밤 대전을 주목하라!
+                                </p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">함께할 친구 구하기</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">예매 정보 찾기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="/static/images/featured_item_2.jpg" alt="">
+                            <div class="overlay-content">
+                    
+                            </div>
+                            <div class="date-content">
+                                <h6>17일</h6>
+                                <span>8월</span>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>워터밤 대구 2019</h4>                        
+                            <p>  최고의 썸머 뮤직 페스티벌! 
+                                    올 여름 워터밤 대구를 주목하라!</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">함께할 친구 구하기</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">예매 정보 찾기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="/static/images/featured_item_3.jpg" alt="">
+                            <div class="overlay-content">
+                            
+                            </div>
+                            <div class="date-content">
+                                <h6>16-18일</h6>
+                                <span>8월</span>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>강원 락 페스티벌 2019 </h4>                
+                            <p>뜨거운 태양과 강렬한 음악 그리고 눈부신 젊음이 어우러질 강원 락 페스티벌!</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">함께할 친구 구하기</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">예매 정보 찾기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+     
+        </div>
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="wrapper">
+                  <div class="section-heading">
+                      <span>Contact Us</span>
+                      <h2>Hangout_Like Lion</h2>
+                  </div>
+                  <!-- Modal button -->
+                  <button id="modBtn" class="modal-btn">Talk to us</button>
+                </div>  
+                <div id="modal" class="modal">
+                  <!-- Modal Content -->
+                  <div class="modal-content">
+                    <div class="close fa fa-close"></div>
+                    <div class="row">
+                        <div class="col-md-8"> 
+                            <div class="left-content">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="section-heading">
+                                            <span>Talk To Us</span>
+                                            <h2>Let's have a discussion</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="이름 또는 닉네임" required="">
+                                      </fieldset>
+                                    </div>
+                                     <div class="col-md-6">
+                                      <fieldset>
+                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="제목" required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="하고싶은 말" required=""></textarea>
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                      </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    
+
+   

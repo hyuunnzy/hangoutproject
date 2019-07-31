@@ -1,0 +1,172 @@
+body {
+    font-family: 'BBTreeGR', 'Raleway', 'sans-serif';
+    background-color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    font-size: 13px;
+    color: #7a7a7a;
+    line-height: 24px;
+    left: 0.25px;
+  }
+  
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px
+  }
+  
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .section-heading span {
+    font-size: 17px;
+    display: block;
+    margin: 0px;
+    color: #FF607f;
+  }
+  
+  .section-heading h2 {
+    margin-bottom: 0px;
+    margin-top: 14px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #232323;
+    letter-spacing: 0.5px;
+  }
+  
+
+
+section.featured-places {
+    margin-top: 80px;
+    padding-bottom: 80px;
+    background-color: #fff;
+  }
+  
+  .featured-places .featured-item .thumb {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .featured-places .featured-item .thumb img {
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 360px;
+    max-height: 360px;
+  }
+  
+  .featured-places .featured-item .thumb .overlay-content {
+    position: absolute;
+    z-index: 9;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+  }
+  
+  .featured-places .featured-item .thumb .overlay-content li {
+    display: inline;
+    margin-right: 3px;
+  }
+  
+  .featured-places .featured-item .thumb .date-content {
+    position: absolute;
+    z-index: 9;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FF607f;
+    border-radius: 50%;
+  }
+  
+  .featured-places .featured-item .thumb .date-content h6 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  .featured-places .featured-item .thumb .date-content span {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0.5px;
+  }
+  
+  .featured-places .featured-item .down-content {
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    padding: 20px 20px 0px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height:150px
+  }
+  
+  .featured-places .featured-item .down-content h4 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF607f;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .featured-places .featured-item .down-content span {
+    display: block;
+    font-size: 13px;
+    color: #FF607f;
+    margin-bottom: 15px;
+  }
+  
+  .featured-places .featured-item .down-content p {
+    margin-bottom: 10px;
+  }
+  
+  .featured-places .featured-item .down-content .col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .featured-places .featured-item .down-content .text-button {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px solid #ddd;
+    margin: 0px -5px;
+  }
+  
+  .featured-places .featured-item .down-content .first-button {
+    border-right: 1px solid #ddd;
+  }
+  
+  .featured-places .featured-item .down-content .text-button a {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7a7a7a;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .featured-places .featured-item .down-content .text-button a:hover {
+    color: #FF607f;
+  }

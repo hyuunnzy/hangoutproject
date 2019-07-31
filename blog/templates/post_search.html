@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {%block content %}
+    <div class="container">
+    <br><br>
+    <h1> " {{ search_term }} " 과 관련된 검색 결과입니다.</h1>
+    <br><br>
+    <div class="container jumbotron">
+        {% if object_list %}
+            {% for post in object_list %}
+                <h2><a href="{% url 'detail' post.id %}">{{ post.title }}</a></h2>
+                {{ post.pub_date }}
+                <p> {{ post.body }} </p>
+            {% endfor %}
+
+        {% elif search_term %}
+            <b><i>{{ search_term }}와 관련된 글이 없습니다 !</i></b>
+    
+        {% endif %}
+    </div>
+    </div>
+{% endblock %}

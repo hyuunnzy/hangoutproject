@@ -1,0 +1,7 @@
+<form action="." method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <!-- form -->
+  <input type="submit" />
+</form>
+{% if object_list %} {% for post in object_list %} {<a href="{{ post.get_absolute_url }}">{{ post.title }}</a> {% endfor
+%} {% elif search_word %} Search Word{{ search_word }} Not Found! {% endif %} ...

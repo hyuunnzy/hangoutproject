@@ -1,0 +1,67 @@
+{% extends 'base.html' %} 
+{% block content %}
+  </head>
+  <body>
+    <div class="container">
+      <br/>
+      <h2>Let's HangOut!</h2>
+      <h5>동행을 구해보세요! </h5>
+      <br/>
+      {% for blog in posts %}
+      
+      <div class="row">
+        <div class="container">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">{{ blog.title }}</h4>
+              <p class="card-text">{{ blog.pub_date }}</p>
+              <p class="card-text">
+                {{ blog.summary }}<a href="{% url 'detail' blog.id %}" class="btn btn-outline-dark">....자세히 보기</a>
+              <h6> <script id="dsq-count-scr" src="//http-127-0-0-1-8000-blog-4.disqus.com/count.js" async></script>
+                <a href="http://127.0.0.1:8000/blog/{{forloop.counter}}/#disqus_thread">댓글</a></h6>
+                <!--<span class="disqus-comment-count" data-disqus-identifier="article_1_identifier">First article</span>-->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      {% endfor %}
+      
+    </div>
+    <div id = "content">
+      <form action='search' method="post"> {% csrf_token %}
+          <input type="text" name="search_word">
+          <input type="submit" value="Search" />
+      </form>
+    </div>
+    <br><br>
+  
+    </div>
+    <nav aria-label="Page navigation example"  display= "table-cell" float="none" text-align= "center">
+      <ul class="pagination">
+        <li class="page-item">
+            {%if posts.has_previous%}
+          <a class="page-link" href="?page={{posts.previous_page_number}}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        {%endif%}
+        <span>{{posts.number}}</span>
+        <span>of</span>
+        <span>{{posts.paginator.num_pages}}</span>
+            {%if posts.has_next%}
+          <a class="page-link" href="?page={{posts.next_page_number}}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+          {%endif%}
+        </li>
+      </ul>
+    </nav>
+    <a href="{% url 'new' %}" class="btn btn-outline-dark">게시글작성</a>
+  </body>
+  <footer class="blog-footer">
+      <p>Made by team 'Hangout' from likelion</p>
+    </footer>
+{% endblock %}
+ㄴ

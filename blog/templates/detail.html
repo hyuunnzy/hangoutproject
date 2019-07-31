@@ -1,0 +1,34 @@
+{% extends 'base.html' %} {% block content %}
+<body>
+  <div class="container">
+    <h3>게시물 상세보기</h3>
+    <div class="container jumbotron">
+      <h1>{{ details.title }}</h1>
+      <p>{{ details.pub_date }}</p>
+      <p>{{ details.body }}</p>
+      <a href="{% url 'home' %}" class="btn btn-outline-dark"> return to homepage </a>
+    </div>
+    <div id="disqus_thread"></div>
+    <!---{% csrf_token %}-->
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+      (function() {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement('script');
+        s.src = 'https://http-127-0-0-1-8000-blog-4.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </div>
+</body>
+{% endblock %}
