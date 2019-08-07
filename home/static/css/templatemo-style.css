@@ -63,7 +63,7 @@ section {
 
 .blue-button a:hover {
   background-color: transparent;
-  color: #4883ff;
+  color: #FF607f;
 }
 
 
@@ -120,7 +120,7 @@ section {
 #primary-nav-button:before {
   content: '\2261';
   display: inline-block;
-  background-color: #4883ff;
+  background-color: #FF607f;
   font-size: 36px;
   font-style: normal;
   font-weight: normal;
@@ -433,7 +433,7 @@ section.banner {
 
 .submit-form button:hover {
   background-color: transparent;
-  color: #4883ff;
+  color: #FF607f;
 }
 
 .popular-places .owl-nav {
@@ -455,7 +455,7 @@ section.banner {
 }
 
 .popular-places .owl-dots .active span {
-  background-color: #4883ff!important;
+  background-color: #FF607f!important;
 }
 
 .popular-places .owl-dots button {
@@ -751,7 +751,7 @@ section.pricing-tables .table-item {
 }
 
 section.pricing-tables .table-item .top-content {
-  background-color: #4883ff;
+  background-color:#FF607f
   padding: 30px;
   color: #fff;
   border-top-right-radius: 10px;
@@ -791,7 +791,7 @@ section.pricing-tables .table-item ul li a {
 }
 
 section.pricing-tables .table-item ul li a:hover {
-  color: #4883ff;
+  color: #FF607f;
 }
 
 section.contact .section-heading {
@@ -884,24 +884,24 @@ section.contact .section-heading {
 
 .modal-content .left-content button {
   display: inline-block;
-  background-color: #4883ff;
+  background-color: #FF607f;
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 16px;
   text-decoration: none;
   border-radius: 0px;
-  border: 2px solid #4883ff;
+  border: 2px solid #FF607f;
   transition: all 0.5s;
 }
 
 .modal-content .left-content button:hover {
   background-color: transparent;
-  color: #4883ff;
+  color: #FF607f;
 }
 
 .modal-content .right-content {
-  background-color: #4883ff;
+  background-color: #FF607f;
   padding: 30px 30px 65px 30px;
   color: #fff;
 }

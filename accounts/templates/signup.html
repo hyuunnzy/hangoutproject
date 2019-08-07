@@ -1,8 +1,13 @@
 {% extends 'base.html' %} {% block content %}
+<hr>
 <head>
   <title>회원가입 화면</title>
 
   <style>
+   body {
+          font-family: 'BBTreeGR', 'Raleway', 'sans-serif';
+        }
+
     #wrap {
       width: 530px;
       margin-left: auto;
@@ -19,21 +24,21 @@
   <br />
   {% endif %}
   <br /><br />
-  <b><font size="6" color="gray">회원가입</font></b>
+  <b><font size="6" color="pink">회원가입</font></b>
   <br /><br /><br />
 
   <form method="POST" action="{% url 'signup'%}">
-    {% csrf_token %} Username:
+    {% csrf_token %} <h7 style="font-size: 19px; color: #FF607f;">Username:</h7>
     <br />
-    <input name="username" type="text" value="" />
+    <input name="username" type="text" value="" style="font-size: 19px;" />
+    <br><br>
+    <h7 style="font-size: 19px; color:#FF607f;">Password:</h7>
     <br />
-    Password:
+    <input name="password1" type="password" value="" style="font-size: 19px;" />
+    <br /><br>
+    <h7 style="font-size: 19px; color:#FF607f;">Confirm Password:</h7>
     <br />
-    <input name="password1" type="password" value="" />
-    <br />
-    Confirm Password:
-    <br />
-    <input name="password2" type="password" value="" />
+    <input name="password2" type="password" value="" style="font-size: 19px;" />
     <br />
     <br />
 
@@ -101,7 +106,7 @@
             </td>
           </tr>-->
     <br />
-    <input type="submit" value="가입" />
+    <input type="submit" value="가입" style="font-size: 19px; color:#FF607f; font-weight: bolder; />
   </form>
 </div>
 {% endblock %}

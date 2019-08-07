@@ -5,24 +5,33 @@
 <br>
 <br>
 {% endif %}
+<style>
+   body {
+          font-family: 'BBTreeGR', 'Raleway', 'sans-serif';
+        }
+</style>
       <form method = "POST" action = "{%url 'login'%}" class="form-signin">
         {% csrf_token %}
         <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72" />
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <center><h1 class="h3 mb-3 " style="font-size: 30px; color:#FF607f; font-weight: bold;">Please sign in</h1></center>
+        &nbsp;
+        <h3 style="font-size: 19px;">ID or Email address:</h3>
+        
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input name="username" type="text"class="form-control"  value="">
-      <br>
-      Password:
-      <br>
-      <input name="password" type="password" class="form-control" value="">
+        <input name="username" type="text"class="form-control"  value="" style="font-size: 19px; color:#FF607f;">
+      <br><br>
+      <h3 style="font-size: 19px;">Password:</h3>
+      
+      <input name="password" type="password" class="form-control" value="" style="font-size: 19px;">
       <br>
       <br>       
         <div class="checkbox mb-3">
-          <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+          <label> <input type="checkbox" value="remember-me"/> <p style="font-size: 19px; color:#FF607f; font-weight: bolder;">Remember me</p> </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit"> Sign in</button>
+        <center><button class="btn btn-outline-danger" type="submit" style="width: 58em; font-size: 19px;"> Sign in</button></center>
+        <!--<center><button class="btn btn-lg btn-primary btn-block" type="submit" style="font-size: 19px;"> Sign in</button></center>-->
       </br>
-        <p class="mt-5 mb-3 text-muted">&copy; DANKOOKUNIV_LikeLion_HangOut</p>
+        <center><p class="mt-5 mb-3 text-muted">&copy; DANKOOKUNIV_LikeLion_HangOut</p></center>
       </form>
     </body>
     
